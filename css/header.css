@@ -1,0 +1,10 @@
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(97, 28, 161);
+    color: azure;
+
+    span:hover {
+        color: red;
+    }
+}

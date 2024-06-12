@@ -1,0 +1,27 @@
+.slide {
+    display: flex;
+    align-items: center;
+    
+    button {
+        width: 0px;
+        position: relative;
+        border-radius: 10%;
+        border: solid transparent;
+        color: white;
+    }
+    #anterior {
+        left: 10px;
+    }
+    #proximo {
+        right: 60px;
+    }
+}
+.page {
+    max-width: 300px;
+    object-fit: cover;
+}
+
+.slides img {
+    width: 200px;
+    max-height: 50vh;
+}
