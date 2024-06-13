@@ -17,6 +17,9 @@ main marquee {
     height: 30vh;
     z-index: 99;
 }
-marquee {
+marquee, a, p {
     color: azure
+}
+#declaracao, a {
+    padding: 3% 20%;
 }
