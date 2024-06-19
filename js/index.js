@@ -1,29 +1,21 @@
-import { FuncoesTexto } from "../js/texto.js";
-import { Slide } from "../js/slide.js";
+import { FuncoesTexto } from "./components/texto.js";
+import { LinkFuncoes } from "./components/link.js";
+import { SlideTime } from "./page/timeSlide.js";
 
-var marquee = new FuncoesTexto();
-
+const marquee = new FuncoesTexto();
 marquee.criaMarquee();
 
-if (! window.location.href.includes('declaracao.html')) {
-  var slide = new Slide();
-  slide.adicionaEventos();
-  slide.atualizarImagem();
+const link = new LinkFuncoes();
+link.clickLink();
 
-  let currentSlide = 0;
-  const slides = document.querySelectorAll('.slides');
-
-  function showSlide() {
-    slides.forEach(slide => {
-      slide.style.display = 'none';
-    });
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].style.display = 'block';
-  }
+if (document.location.href.includes("index")) {
+  const slide = new SlideTime();
 
   // Define o intervalo de tempo para mudar os slides (em milissegundos)
-  const intervalo = 2000; // 5 segundos
+  var intervalo = 2000; // 2 segundos
 
-  // Inicia o intervalo
-  setInterval(showSlide, intervalo);
+  // Use setInterval corretamente
+  setInterval(() => {
+      slide.showSlide(); // Chama slide.showSlide() a cada intervalo
+  }, intervalo);
 }

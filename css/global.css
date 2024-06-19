@@ -6,7 +6,7 @@
 body {
     background-color: rgb(0, 0, 0);
 }
-span, h4 {
+span, h4, h2 {
     animation: textRed 10s 3s ease infinite;
 }
 @keyframes textRed {

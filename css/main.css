@@ -3,19 +3,18 @@ main, section, #declarar {
     flex-direction: row;
     justify-content: space-between;
     gap: 1px;
-    height: 10vw;
+    height: 100px;
 }
 section {
     align-items: center;
     flex-direction: column;
     opacity: 0.8;
     color: #f0ffff;
-    z-index: 1;
+    z-index: 2;
     background: transparent;
 }
 main marquee {
     height: 30vh;
-    z-index: 99;
 }
 marquee, a, p {
     color: azure

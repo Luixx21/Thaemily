@@ -7,4 +7,9 @@ header {
     span:hover {
         color: red;
     }
+
+    a {
+        display: ruby-text;
+        padding-top: 20px;
+    }
 }
