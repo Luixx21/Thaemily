@@ -15,6 +15,7 @@ if (document.location.href.includes("index")) {
   var intervalo = 2000; // 2 segundos
 
   // Use setInterval corretamente
+  slide.showSlide();
   setInterval(() => {
       slide.showSlide(); // Chama slide.showSlide() a cada intervalo
   }, intervalo);

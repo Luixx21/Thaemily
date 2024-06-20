@@ -1,6 +1,16 @@
 var imgs = document.querySelectorAll('img');
 
-imgs.forEach(function(img) {
+for (var i = 1; i <= 10; i++) {
+    var img = document.createElement("img");
+
+    img.classList.add("escolha-item");
+    img.src = "../img/slide/" + i + ".jpeg";
+    adicionaEvento(img);
+
+    document.querySelector("#escolha").appendChild(img)
+}
+
+function adicionaEvento(img) {
     img.addEventListener('click', function() {
         var div = document.querySelector('#principal'); 
 
@@ -10,4 +20,4 @@ imgs.forEach(function(img) {
             div.innerHTML = "";
         });
     });
-});
+};
