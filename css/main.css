@@ -3,7 +3,7 @@ main, section, #declarar {
     flex-direction: row;
     justify-content: space-between;
     gap: 1px;
-    height: 100px;
+    height: 20vh;
 }
 section {
     align-items: center;

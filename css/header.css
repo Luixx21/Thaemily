@@ -3,6 +3,7 @@ header {
     text-align: center;
     background-color: rgb(97, 28, 161);
     color: azure;
+    font-size: 90%;
 
     span:hover {
         color: red;

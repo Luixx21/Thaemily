@@ -1,6 +1,6 @@
 var imgs = document.querySelectorAll('img');
 
-for (var i = 1; i <= 10; i++) {
+for (var i = 1; i <= 12; i++) {
     var img = document.createElement("img");
 
     img.classList.add("escolha-item");
